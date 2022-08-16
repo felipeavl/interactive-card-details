@@ -1,0 +1,97 @@
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--deep-violet);
+  opacity: 0.25;
+}
+
+input {
+  font-family: "Space Grotesk";
+  border-radius: 8px;
+  border: 1px solid var(--light-grey);
+  line-height: 45px;
+  font-size: 18px;
+  text-indent: 16px;
+  width: 100%;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid var(--deep-violet);
+}
+
+.invalid {
+  border: 1px solid var(--red);
+}
+
+.form-group {
+  padding: 10px;
+
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 9px;
+  margin-bottom: 26px;
+}
+
+.form-line {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: flex-start;
+  gap: 20px;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.expiry-date {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+
+  input {
+    width: 80px;
+  }
+}
+
+button {
+  background-color: var(--deep-violet);
+  border-radius: 8px;
+  border: none;
+  color: var(--white);
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  width: 100%;
+  height: 53px;
+  cursor: pointer;
+}
+
+.complete-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0;
+}
+
+.complete {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.thank-you {
+    margin-top: 35px;
+    margin-bottom: 16px;
+}
+
+.info {
+    margin-top: 0;
+    margin-bottom: 48px;
+    color: var(--purplish-grey);
+}

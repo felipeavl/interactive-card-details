@@ -1,1 +1,242 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --deep-violet: #21092f;
+  --purplish-grey: #8f8694;
+  --light-grey: #dfdee0;
+  --white: #ffffff;
+  --red: #ff5050;
+  --gradient: linear-gradient(163.95deg, #6348fe 4.74%, #610595 88.83%);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  margin: 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  min-height: 30px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.footer {
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.large-screens {
+  display: none;
+}
+
+.small-screens {
+
+  .mobile {
+    display: grid;
+    grid-template-rows: 33% auto;
+  }
+  
+  .top-bar {
+    background-image: url("assets/bg-main-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-back-mobile {
+    margin-top: 34px;
+    margin-left: unset;
+    align-self: flex-end;
+    width: 286px;
+    height: 157px;
+    background-size: cover;
+    margin-right: 16px;    
+
+    .cvc {
+      font-size: 9px;
+      margin-top: 68px;
+      margin-bottom: 116px;
+      margin-left: 230px;
+    }
+
+  }
+
+  .card-front-mobile {
+    align-self: flex-start;
+    margin-top: -68px;
+    margin-bottom: 50px;
+    margin-left: 16px;
+    width: 286px;
+    height: 157px;
+    background-size: cover;
+    
+    .card-number {
+      font-size: 18px;
+      letter-spacing: 2.2px;
+    }
+
+    .card-data {
+      font-size: 9px;      
+    }
+
+    div {
+      margin-left: 19px;
+    }
+
+    .card-logo {
+      transform: scale(0.5);
+      align-self: flex-start;
+      margin: 0;
+    }
+
+  }
+
+  .form-mobile {
+    max-width: unset;
+    margin-left: unset;
+    padding: 24px;
+  }
+
+}
+
+@media (min-width: 1160px) {
+  .large-screens {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 33% auto;
+  }
+
+  .small-screens {
+    display: none;
+  }
+}
+
+.side-bar {
+    background-image: url("assets/bg-main-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 37px;
+}
+
+.card-front {
+    background-image: url("assets/bg-card-front.png");
+    background-repeat: no-repeat;    
+    height: 245px;
+    width: 447px;
+    margin-left: 163px;
+    background-position-x: right;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+  div {
+    margin-left: 32px;
+  }
+
+  .card-logo {
+    margin-bottom: auto;
+    margin-top: 28px;
+  }
+
+  .card-data {
+    margin-bottom: 26px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 26px;
+    margin-right: 32px;
+  }
+
+}
+
+.card-back {
+    background-image: url("assets/bg-card-back.png");
+    background-repeat: no-repeat;
+    height: 245px;
+    width: 447px;
+    margin-left: 257px;
+    background-position-x: right;
+
+  .cvc {
+    color: var(--white);
+    margin-top: 111px;
+    margin-bottom: 116px;
+    margin-left: 358px;    
+  }
+
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 381px;
+    margin-left: 349px;
+}
+
+.text-body-small {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.text-body-medium {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.text-body-large {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  /* identical to box height */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.heading-large {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  /* identical to box height */
+}
+
+.heading-xlarge {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 36px;
+  /* identical to box height */
+  letter-spacing: 3.42222px;
+  text-transform: uppercase;
+}
+
+.validation-error {
+    color: var(--red);
+    font-size: 12px;
+}
